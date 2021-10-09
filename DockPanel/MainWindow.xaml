@@ -6,37 +6,67 @@
         xmlns:local="clr-namespace:DockPanel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Horizontal">
-        <Button Content="Avatar" Height="450" Width="270" VerticalContentAlignment="Top" Foreground="White" Background="ForestGreen" BorderBrush="Black"/>
-        <Button Content="Clash of the Titans" Height="232" Width="180" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Robin Hood" Height="188" Width="180" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The Expendables" Height="160" Width="160" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Red" Width="160" Height="122" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Dinner for Schmucks" Height="138" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The book of Eli" Width="184" Height="160" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Sherlock Holmes" Height="121" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The Bounty Hunter" Height="139" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-    </StackPanel>
-    
-    <!--<Window x:Class="DockPanel.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DockPanel"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Horizontal">
-        <Button Content="Avatar" Height="450" Width="270" VerticalContentAlignment="Top" Foreground="White" Background="ForestGreen" BorderBrush="Black"/>
-        <Button Content="Clash of the Titans" Height="232" Width="180" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Robin Hood" Height="188" Width="180" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The Expendables" Height="160" Width="160" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Red" Width="160" Height="122" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Dinner for Schmucks" Height="138" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The book of Eli" Width="184" Height="160" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="Sherlock Holmes" Height="121" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-        <Button Content="The Bounty Hunter" Height="139" VerticalContentAlignment="Top" Foreground="White" Background="LimeGreen"/>
-    </StackPanel>
-</Window>-->
+
+    <DockPanel Background="Black">
+        <Border Margin="0,0,4,0" DockPanel.Dock="Left" Background="#61de2a" Width="300">
+            <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                Avatar
+            </Label>
+        </Border>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Border Margin="0,0,3,48" Background="#90ee90" Grid.RowSpan="2">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    Clash of the Titans
+                </Label>
+            </Border>
+            <Border Margin="0,-45,3,0"  Background="#90ee90" Grid.Row="2">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    Robin hood
+                </Label>
+            </Border>
+            <Border Margin="0,0,3,3" Background="#90ee90" Grid.Column="1">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    The expendables
+                </Label>
+            </Border>
+            <Border Margin="0,0,0,3" Background="#90ee90" Grid.Column="1" Grid.Row="1">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    Red
+                </Label>
+            </Border>
+            <Border Margin="0,0,0,0" Background="#90ee90" Grid.Column="1" Grid.Row="2">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    Dinner for Schmucks
+                </Label>
+            </Border>
+            <Border Margin="0,0,0,3" Background="#90ee90" Grid.Column="2" Grid.Row="0">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    The book of Eli
+                </Label>
+            </Border>
+            <Border Margin="3,0,0,12" Background="#90ee90" Grid.Column="2" Grid.Row="1">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    Sherlock Holmes
+                </Label>
+            </Border>
+            <Border Margin="3,-9,0,0" Background="#90ee90" Grid.Column="2" Grid.Row="2">
+                <Label Foreground="White" FontSize="20" HorizontalAlignment="Center">
+                    The bounty hunter
+                </Label>
+            </Border>
+        </Grid>
+    </DockPanel>
 
 </Window>
