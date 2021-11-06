@@ -1,0 +1,29 @@
+﻿<Window x:Class="HorseRacing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorseRacing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="main">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Content="Start" FontSize="20" Width="200" Height="50" Click="Button_Click"/>
+        <ProgressBar x:Name="Horse1" Grid.Row="1" Margin="15" Width="500" Foreground="#457b9d" Maximum="100"></ProgressBar>
+        <ProgressBar x:Name="Horse2" Grid.Row="2" Margin="15" Width="500" Foreground="#0a9396" Maximum="100"></ProgressBar>
+        <ProgressBar x:Name="Horse3" Grid.Row="3" Margin="15" Width="500" Foreground="#7209b7" Maximum="100"></ProgressBar>
+        <ProgressBar x:Name="Horse4" Grid.Row="4" Margin="15" Width="500" Foreground="#f72585" Maximum="100"></ProgressBar>
+        <ProgressBar x:Name="Horse5" Grid.Row="5" Margin="15" Width="500" Foreground="#e5989b" Maximum="100"></ProgressBar>
+
+        <TextBox Grid.Row="6" x:Name="resultsTB"></TextBox>
+    </Grid>
+</Window>
